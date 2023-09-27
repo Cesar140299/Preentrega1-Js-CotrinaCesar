@@ -2,8 +2,8 @@ let cliente = prompt ("Eres Cliente? colocar si o no")
 const contrasenia = 12345
 
 
-
-if (cliente == "si") {
+function inicio_de_sesion() {
+    if (cliente == "si") {
     alert("Bienvenido")
     let contrasenia_ingresada = Number(prompt("Ingrese su contraseña"))
     if ((contrasenia==contrasenia_ingresada) && (contrasenia_ingresada != "")) {
@@ -26,5 +26,6 @@ if (cliente == "si") {
 } else {
     alert("Esa opcion no existe")
 }
+}
 
-
+inicio_de_sesion()
